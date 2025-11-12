@@ -41,6 +41,7 @@
 제가 가장 많이 사용하고, 가장 확실하게 추천하는 방법은 검색창에 **'기술명 + docs'** 를 입력하는 것입니다.
 
 예를 들어, 'JdbcTemplate'에 대해 알아보고 싶다면, 검색창에 'JdbcTemplate docs'라고 검색해 보세요. 거의 무조건 Spring 공식 문서가 최상단에 보일 것입니다. (아쉽게도, AWS 같은 거대 글로벌 기업이나 국내 IT 기업들을 제외하면, 잘 갖춰진 한국어 공식 문서는 아직 드뭅니다.)
+
 ### 'docs'가 안 보인다면? : 'how to use'
 
 공식 문서는 아니지만, 그에 준하는 공신력을 가진 사이트들도 있습니다. **Wikipedia, MDN** 등이 대표적입니다. Spring을 사용하시는 분들은 'Baeldung'도 추가할 수 있겠네요. 이런 사이트들은 검수를 거쳐 글이 작성되기 때문에, 초기 학습에 활용해보는 것도 좋습니다.
@@ -121,18 +122,28 @@ synchronus, fluent 이 두 단어가 '동기적인', '유창한'이라는 의미
 
 모르는 단어를 정확히 이해하고 넘어가는 것은 중요합니다. '대충 이런 뜻이겠지.'하며 넘어간 단어는 문장을 이해하지 못하게 만들고, 그 문장이 문단을, 나아가서 글 전체를 이해하지 못하게 만들기 때문입니다. 또, 잘못 이해한 문장 때문에 글 전체를 오해하며 읽게 되어 시간을 소모할 수도 있습니다. 그러므로 반드시, 의식적으로 모르는 단어가 무엇인지 파악하며, 글을 읽기를 바랍니다.
 
-다시 이어가서, 글을 쭉 읽다가 예시 코드 블록을 발견합니다. 'The following example shows how to create a default RestClient, and how to build a custom one.' 이라는 문장을 읽으며 어떤 예시를 볼 수 있을 지를 짐작하며 아래 예시를 읽어봅니다. 윗문장을 이해하고 무엇이 나올 지를 떠올리며 읽었기 때문에, 코드 블록의 첫 번째 줄이 기본 RestClient(default RestClient)를 생성하는 예시이고, 그 아래는 임의의 Restclient(custom one)를 생성하는 예시라는 것을 알 수 있습니다. 더 나아가서는, 앞서 fluent API에 대해 알아보았던 내용이, 실제로 custom Restclient를 생성할 때에 쓰이고 있다는 것도 확인해볼 수 있습니다.
+다시 이어가서, 글을 쭉 읽다가 예시 코드 블록을 발견합니다. 
+
+> 'The following example shows how to create a default RestClient, and how to build a custom one.' 
+
+해당 문장을 읽으며 어떤 예시를 볼 수 있을 지를 짐작하며 아래 예시를 읽어봅니다. 윗문장을 이해하고 무엇이 나올 지를 떠올리며 읽었기 때문에, 코드 블록의 첫 번째 줄이 기본 RestClient(default RestClient)를 생성하는 예시이고, 그 아래는 임의의 Restclient(custom one)를 생성하는 예시라는 것을 알 수 있습니다. 더 나아가서는, 앞서 fluent API에 대해 알아보았던 내용이, 실제로 custom Restclient를 생성할 때에 쓰이고 있다는 것도 확인해볼 수 있습니다.
 
 만약 글을 읽자마자 급한 마음에 예시 코드 블록부터 읽었거나, 모르는 단어가 나왔을 때 대충 넘어갔다면, 같은 문서를 읽더라도 얻어가는 것의 차이는 매우 컸을 것입니다. 글을 이해하는 데에 걸리는 시간도 더 오래걸렸을지도 모릅니다.
 
 **Tip: 자바독(Javadoc)과 같은 트리 구조 문서**   
+
 자바독처럼 클래스 상속 구조를 따르는 문서는 특정 페이지를 바로 열었을 때 이해하기 어려운 경우가 많습니다. 이는 상위 클래스나 인터페이스의 내용을 이미 알고 있다는 전제하에 작성되었기 때문입니다. 이것은 마치 글을 위에서 아래로 읽어야하는 이유와 같습니다. 내용이 이해되지 않는다면, **문서의 상위 계층으로 이동하여 전체적인 맥락을 파악하는 것**이 좋습니다.
 가령, DispatcherServlet 공식문서에서는, Servlet이 무엇인지에 대해서 설명해주지는 않습니다.
-    ![image3.png](image3.png)
-	Servlet에 대해 알아보기 위해서 'Servlet docs'라고 검색해보는 것도 좋은 방법입니다. 그렇지만, 더 확실한 방법으로 우리는 아래의 트리에서 원하는 정보를 얻을 수도 있습니다:
-	![[image4.png]](image4.png)
-	'All implemented Interfaces:'에 나열된 인터페이스들 중, Servlet을 클릭해서 Servlet에 대한 정의를 찾을 수 있습니다. 
-	![[image5.png]](image5.png)
+
+![image3.png](image3.png)
+
+Servlet에 대해 알아보기 위해서 'Servlet docs'라고 검색해보는 것도 좋은 방법입니다. 그렇지만, 더 확실한 방법으로 우리는 아래의 트리에서 원하는 정보를 얻을 수도 있습니다:
+
+![image4.png](image4.png)
+
+2'All implemented Interfaces:'에 나열된 인터페이스들 중, Servlet을 클릭해서 Servlet에 대한 정의를 찾을 수 있습니다.
+
+![image5.png](image5.png)
 
 ---  
 
@@ -141,6 +152,7 @@ synchronus, fluent 이 두 단어가 '동기적인', '유창한'이라는 의미
 물론 공식 문서가 만능은 아닙니다. 다음과 같은 **한계점**도 분명히 존재합니다.
 
 -   **'사용법'을 넘어선 '동작 원리'의 깊이**
+
     공식 문서는 기본적으로 '일반적인 사용 사례(How-to-Use)'를 중심으로 서술됩니다. 따라서 **내부 동작 원리나 매우 깊은 수준의 최적화**에 대한 내용은 부족할 수 있습니다.
 
     하지만 이 한계점은 오히려 현명한 학습 가이드라인이 될 수 있습니다. 만약 공식 문서가 특정 내부 원리를 자세히 설명하지 않았다면, 이는 '기술을 만든 사람이 사용자가 굳이 알 필요 없다고 판단했기 때문'일 수 있습니다.
@@ -148,6 +160,7 @@ synchronus, fluent 이 두 단어가 '동기적인', '유창한'이라는 의미
     더군다나, 문서화되지 않은 내부 구현 방식은 언제든 예고 없이(마치 '잠수함 패치'처럼요) 변경될 수 있는 불안정한 지식입니다. 따라서 학습 초기 단계라면, 언제 바뀔지 모르는 세세한 '구현'에 매달리기보다, 기술의 본질이자 약속인 '추상화된 설계도(인터페이스)'에 집중하는 것이 훨씬 효율적이라고 생각합니다.
 
 -   **초기 학습 속도**
+
     잘 요약된 블로그 글이 당장의 지식을 습득하는 데는 더 빠르고 편할 수 있습니다. 당장 내일까지 결과물을 내야 하는 상황이라면, 두꺼운 공식 문서를 포기하고 싶은 유혹에 빠지기 쉽습니다.
 
     하지만 남이 소화해서 떠먹여 주는 정보는 **왜곡되거나 중요한 부분이 누락될 위험**이 항상 존재합니다.
@@ -163,16 +176,14 @@ synchronus, fluent 이 두 단어가 '동기적인', '유창한'이라는 의미
 어렵게 느껴지더라도, 공식문서 학습법에 도전해보세요. 여러분의 앞으로의 개발에 든든한 조력자가 되어 줄 거에요.
 
 ---
-참고 문서
+## References
 
-Spring 공식 문서
+### Spring 공식 문서
 
 [Rest Client](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html#rest-restclient)
-
 [Dispatcher Servlet](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet.html#)
 
-JavaDoc 공식 문서
+### JavaDoc 공식 문서
 
 [Dispatcher Servlet](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html)
-
 [Servlet](https://jakarta.ee/specifications/platform/9/apidocs/jakarta/servlet/servlet)
