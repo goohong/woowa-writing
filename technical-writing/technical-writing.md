@@ -160,18 +160,19 @@ synchronus, fluent 이 두 단어가 '동기적인', '유창한'이라는 의미
 
 잘 다듬어진 문서는 문장과 문장이 제 역할을 하며 유기적으로 연결됩니다. 처음엔 어렵지만, 집중해서 한 문장씩 곱씹다 보면 어느새 지식이 제 것이 되어 있었습니다. 과장하자면, 지금은 사족이 많은 가벼운 블로그 글이나 AI가 작성한 글이 오히려 느끼하게 느껴질 정도입니다.
 저는 주변 동료들에게 '공식 문서 한 줄이 블로그 열 줄이다.' 라고 말합니다. 농담이 조금 섞이긴 했지만, 저는 정말 그렇게 생각합니다.
+어렵게 느껴지더라도, 공식문서 학습법에 도전해보세요. 여러분의 앞으로의 개발에 든든한 조력자가 되어 줄 거에요.
 
 ---
 참고 문서
 
 Spring 공식 문서
 
-https://docs.spring.io/spring-framework/reference/integration/rest-clients.html#rest-restclient
+[Rest Client](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html#rest-restclient)
 
-https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet.html#
-
-https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html
+[Dispatcher Servlet](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet.html#)
 
 JavaDoc 공식 문서
 
-https://jakarta.ee/specifications/platform/9/apidocs/jakarta/servlet/servlet
+[Dispatcher Servlet](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html)
+
+[Servlet](https://jakarta.ee/specifications/platform/9/apidocs/jakarta/servlet/servlet)
