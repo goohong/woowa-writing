@@ -9,7 +9,3 @@
 | [감정을 지혜롭게 표현하기 (레벨1)](https://github.com/goohong/woowa-writing/blob/goohong/level1.md) | 감정을 눌러 온 시간을 돌아보고, 솔직한 표현을 실험한 회고 |
 | [학습 방식을 돌아보다 (레벨2)](https://github.com/goohong/woowa-writing/blob/goohong/level2.md) | 정해진 공부에서 스스로 학습법을 찾기까지의 회고 |
 | [공식 문서를 아군으로 만드는 사용 설명서](https://github.com/goohong/woowa-writing/blob/goohong/technical-writing/technical-writing.md) | 공식 문서를 1차 소스로 삼는 학습법 정리 (테크니컬 라이팅) |
-
-## 기억에 남는 문장
-
-> "누군가 '왜 솔직하게 감정을 표현하고 살아야 하나요'라고 묻는다면, 그냥 이렇게 사는 것이 더 즐거워서라고 답할 것 같다. 표현해야 안다. 그것이 쌓이면 말하지 않아도 안다." (레벨1)
